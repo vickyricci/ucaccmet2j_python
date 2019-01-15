@@ -16,7 +16,7 @@ total_precipitation= int(sum(seattle_month))
 total_relative_percipitation = [i/total_precipitation*100 for i in seattle_month] #shorthand loop
 print(total_relative_percipitation) 
 with open ('seattle_precipitation.json', 'w') as file:
-    	json.dump(total_relative_percipitation,file,indent=4)
+    json.dump(total_relative_percipitation,file,indent=4)
 
 
 #print(seattle_month)    
